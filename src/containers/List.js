@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Layout, Menu, Icon } from 'antd';
 import {Header_} from "../components/Header";
 import {SiderDemo} from "../components/Sider";
+const {Header, Sider, Content} = Layout;
 
 const {  Sider, Content } = Layout;
 export class List extends Component {
@@ -43,24 +44,21 @@ export class List extends Component {
                 </Menu>
             </Sider>
         <Layout>
-            <Header style={{
-            background: '#fff',
-            padding: 0
-            }}>
+            <Header style={{background: '#fff',padding: 0}}>
             <Icon
-            className="trigger"
-            type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
-            onClick={this.toggle}
-            />
+      className="trigger"
+      type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
+      onClick={this.toggle}
+      />
             </Header>
             <Content
-                style={{
-                    margin: '24px 16px',
-                    padding: 24,
-                    background: '#fff',
-                    minHeight: 280,
-                }}
-                >
+      style={{
+        margin: '24px 16px',
+        padding: 24,
+        background: '#fff',
+        minHeight: 280,
+      }}
+      >
                 Content
             </Content>
         </Layout>

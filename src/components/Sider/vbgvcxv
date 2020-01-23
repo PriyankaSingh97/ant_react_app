@@ -1,0 +1,26 @@
+{data.sideMenu.map((element,index)=>{
+    return element.submenu ? element.submenu.map((element,index)=>{
+       return <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+       
+           <SubMenu
+           key={element.key}
+           title={
+             <span>
+               <Icon type={element.type} />
+               <span>{element.labelName}</span>
+             </span>
+           }
+         >
+            <Menu.Item key={element.key}>
+               <Icon type={element.type} />
+               <span>{element.label}</span>
+        
+             </Menu.Item>
+         </SubMenu>
+         </Menu>}) : <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+       <Menu.Item key={element.key}>
+         <Icon type={element.type} />
+         <span>{element.label}</span>
+       </Menu.Item>
+       </Menu> })
+}

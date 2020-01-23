@@ -1,0 +1,32 @@
+{
+    "sideMenu": [
+        {
+            "key": "1",
+            "label": "Option 1",
+            "type":"pie-chart"
+        },
+        {
+            "key": "2",
+            "label": "Option 2",
+            "type":"desktop",
+            "submenu": [
+                {
+                    "index ": "3",
+                    "labelName": "SubOption 1",
+                    "type":"desktop",
+                    "label": "Option 2"
+                },
+                {
+                    "index ": "4",
+                    "labelName": "SubOption 2",
+                    "type":"desktop"
+                }
+            ]
+            },
+            {
+                "key": "5",
+                "label": "Option 3",
+                "type":"user"
+            }
+        ]
+    }

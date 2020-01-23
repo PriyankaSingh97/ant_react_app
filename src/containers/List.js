@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { Layout, Menu, Icon } from 'antd';
-const { Header, Sider, Content } = Layout;
+import {Header_} from "../components/Header";
+import {SiderDemo} from "../components/Sider";
 
+const {  Sider, Content } = Layout;
 export class List extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +22,9 @@ export class List extends Component {
   render() {
     return (
     <React.Fragment>
-    <Layout>
+        <Header_ />
+        <SiderDemo/>
+    {/* <Layout>
             <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
                 <div className="logo" />
                 <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
@@ -60,7 +64,7 @@ export class List extends Component {
                 Content
             </Content>
         </Layout>
-    </Layout>
+    </Layout> */}
     </React.Fragment>
       );
   }

@@ -2,9 +2,16 @@ import React, { Component } from "react";
 import { Layout, Menu, Icon } from 'antd';
 import {Header_} from "../components/Header";
 import {SiderDemo} from "../components/Sider";
-const {Header, Sider, Content} = Layout;
+import {DropdownComponent} from "../components/Dropdown"
 
-const {  Sider, Content } = Layout;
+
+
+
+
+
+const {Header, Sider, Content,Footer} = Layout;
+
+// const {  Sider, Content } = Layout;
 export class List extends Component {
   constructor(props) {
     super(props);
@@ -23,46 +30,27 @@ export class List extends Component {
   render() {
     return (
     <React.Fragment>
-        <Header_ />
-        <SiderDemo/>
-    {/* <Layout>
-            <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
-                <div className="logo" />
-                <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-                <Menu.Item key="1">
-                <Icon type="user" />
-                <span>nav 1</span>
-                </Menu.Item>
-                <Menu.Item key="2">
-                <Icon type="video-camera" />
-                <span>nav 2</span>
-                </Menu.Item>
-                <Menu.Item key="3">
-                <Icon type="upload" />
-                <span>nav 3</span>
-                </Menu.Item>
-                </Menu>
-            </Sider>
-        <Layout>
-            <Header style={{background: '#fff',padding: 0}}>
-            <Icon
-      className="trigger"
-      type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
-      onClick={this.toggle}
-      />
-            </Header>
-            <Content
-      style={{
-        margin: '24px 16px',
-        padding: 24,
-        background: '#fff',
-        minHeight: 280,
-      }}
-      >
-                Content
-            </Content>
-        </Layout>
-    </Layout> */}
+       <Layout>
+       <Layout>
+      
+
+         <Header_/>
+         <Content style={{margin: '0 8px',background: '#fff' }}>
+         <DropdownComponent/>
+
+
+
+
+          </Content>
+         <SiderDemo/>
+        
+
+
+         
+           <Footer style={{textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+         </Layout>
+         </Layout>
+
     </React.Fragment>
       );
   }

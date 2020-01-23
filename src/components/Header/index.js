@@ -7,7 +7,7 @@ import { func } from 'prop-types';
 
 const { Header, Content, Footer } = Layout;
 
-export function Header_(){
+export  function Header_(){
     return(
         <Layout className="layout">
         <Header>

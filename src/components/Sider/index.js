@@ -4,7 +4,7 @@ import 'antd/dist/antd.css';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 import data from "./../../data/data.json"
 import { element } from 'prop-types';
-import {ContentComponent} from "../content"
+// import {ContentComponent} from "../content"
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -93,7 +93,7 @@ export class SiderDemo extends React.Component {
 
 
         </Sider>
-       <ContentComponent/>
+       {/* <ContentComponent/> */}
       </Layout>
     );
   }

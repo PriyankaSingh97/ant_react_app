@@ -1,0 +1,19 @@
+{
+    "radioButtonscjeck" : [
+        {
+            "value" : "Men",
+            "label" : "Men"
+
+        },
+        {
+            "value" : "Female",
+            "label" : "Female"
+
+        },
+        {
+            "value" : "Other",
+            "label" : "Other"
+
+        }
+    ]
+}

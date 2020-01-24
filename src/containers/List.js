@@ -7,6 +7,7 @@ import {SearchComponent} from "../components/SearchBox";
 import {RadioButtonComponent} from "../components/RadioButton"
 import {TeaxtArea} from "../components/TextArea"
 import {TextField} from "../components/Textfield"
+import radioButtonscjeck1 from "../data/dummy.json"
 
 const {Header, Sider, Content, Footer} = Layout;
 
@@ -25,7 +26,13 @@ export class List extends Component {
     });
   };
 
+  
+
   render() {
+    let {radioButtonscjeck=[]}=radioButtonscjeck1
+
+
+
     return (
       <React.Fragment>
        <Layout>
@@ -42,13 +49,13 @@ export class List extends Component {
           <h1>fdzxg</h1> */}
 
           <SearchComponent/>
-          <RadioButtonComponent/>
+          <RadioButtonComponent  radioBtnObj={radioButtonscjeck} />
          < TeaxtArea/>
          <TextField/>
 
 
           </Content>
-          <div style={{textAlign:"center"}}><Footer style={{textAlign: 'center'}}>Ant Design ©2018 Created by Ant UED</Footer></div>
+          {/* <div style={{textAlign:"center"}}><Footer style={{textAlign: 'center'}}>Ant Design ©2018 Created by Ant UED</Footer></div> */}
          </Layout>
        </div>
       </div>    

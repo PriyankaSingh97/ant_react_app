@@ -9,11 +9,13 @@ import { Input } from 'antd';
 
 export class TextField extends Component {
   render() {
+    let { textFieldData = {},  className = "", placeholder = '',disabled ,requiredmessage,error} = this.props;
+    console.log("props = ",this.props.textFieldData)
+
     return (
       <div className="example-input">
-            {/* <Input size="large" placeholder="large size" /> */}
-            <Input placeholder="default size" />
-            {/* <Input size="small" placeholder="small size" /> */}
+            <Input  type={textFieldData.type || "text"}
+                                        placeholder="default size" />
           </div>
 
     )

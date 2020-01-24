@@ -1,17 +1,11 @@
 import React, { Component } from "react";
 import { Layout, Menu, Icon } from 'antd';
-import {Header_} from "../components/Header";
-import {SiderDemo} from "../components/Sider";
-import {DropdownComponent} from "../components/Dropdown"
+import { Header_ } from "../components/Header";
+import { SiderDemo } from "../components/Sider";
+import { DropdownComponent } from "../components/Dropdown"
 
+const {Header, Sider, Content, Footer} = Layout;
 
-
-
-
-
-const {Header, Sider, Content,Footer} = Layout;
-
-// const {  Sider, Content } = Layout;
 export class List extends Component {
   constructor(props) {
     super(props);
@@ -29,29 +23,26 @@ export class List extends Component {
 
   render() {
     return (
-    <React.Fragment>
+      <React.Fragment>
        <Layout>
-       <Layout>
-      
-
-         <Header_/>
-         <Content style={{margin: '0 8px',background: '#fff' }}>
-         <DropdownComponent/>
-
-
-
-
+         <div><Header_/></div>
+         <div style={{display:"flex",width:"100%"}}>
+         <div> <SiderDemo/></div>
+          <div>
+           <Layout>
+          <Content style={{margin: '8px 8px 0 8px',background: '#fff',height:'500px',width:"1141px"}}>
+          <DropdownComponent/>
+          <h1>fdzxg</h1>
+          <h1>fdzxg</h1>
+          <h1>fdzxg</h1>
+          <h1>fdzxg</h1>
           </Content>
-         <SiderDemo/>
-        
-
-
-         
-           <Footer style={{textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+          <div style={{textAlign:"center"}}><Footer style={{textAlign: 'center'}}>Ant Design ©2018 Created by Ant UED</Footer></div>
          </Layout>
-         </Layout>
-
-    </React.Fragment>
+       </div>
+      </div>    
+      </Layout>
+      </React.Fragment>
       );
   }
 }

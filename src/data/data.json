@@ -11,14 +11,13 @@
             "type":"desktop",
             "submenu": [
                 {
-                    "index ": "3",
-                    "labelName": "SubOption 1",
+                    "key ": "3",
                     "type":"desktop",
-                    "label": "Option 2"
+                    "label": "Option 2-1"
                 },
                 {
-                    "index ": "4",
-                    "labelName": "SubOption 2",
+                    "key ": "4",
+                    "label": "Option 2-2",
                     "type":"desktop"
                 }
             ]

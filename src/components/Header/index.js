@@ -11,7 +11,6 @@ export  function Header_(){
     return(
         <Layout className="layout">
         <Header>
-
         </Header>
         
       </Layout>
@@ -19,4 +18,3 @@ export  function Header_(){
 }
 
 
-          

@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import { Layout, Menu, Icon } from 'antd';
 import { Header_ } from "../components/Header";
 import { SiderDemo } from "../components/Sider";
-import { DropdownComponent } from "../components/Dropdown"
+import { DropdownComponent } from "../components/Dropdown";
+import {SearchComponent} from "../components/SearchBox";
+import {RadioButtonComponent} from "../components/RadioButton"
+import {TeaxtArea} from "../components/TextArea"
+import {TextField} from "../components/Textfield"
 
 const {Header, Sider, Content, Footer} = Layout;
 
@@ -32,10 +36,17 @@ export class List extends Component {
            <Layout>
           <Content style={{margin: '8px 8px 0 8px',background: '#fff',height:'500px',width:"1141px"}}>
           <DropdownComponent/>
+          {/* <h1>fdzxg</h1>
           <h1>fdzxg</h1>
           <h1>fdzxg</h1>
-          <h1>fdzxg</h1>
-          <h1>fdzxg</h1>
+          <h1>fdzxg</h1> */}
+
+          <SearchComponent/>
+          <RadioButtonComponent/>
+         < TeaxtArea/>
+         <TextField/>
+
+
           </Content>
           <div style={{textAlign:"center"}}><Footer style={{textAlign: 'center'}}>Ant Design ©2018 Created by Ant UED</Footer></div>
          </Layout>

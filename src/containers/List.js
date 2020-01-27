@@ -7,6 +7,8 @@ import {SearchComponent} from "../components/SearchBox";
 import {RadioButtonComponent} from "../components/RadioButton"
 import {TeaxtArea} from "../components/TextArea"
 import {TextField} from "../components/Textfield"
+// import {CheckBox} from "../components/checkbox"
+import  CheckBoxComponent from "../components/checkbox"
 import radioButtonscjeck1 from "../data/dummy.json"
 
 const {Header, Sider, Content, Footer} = Layout;
@@ -29,7 +31,7 @@ export class List extends Component {
   
 
   render() {
-    let {radioButtonscjeck=[]}=radioButtonscjeck1
+    let {radioButtonscjeck=[],checkBoxButtons=[]}=radioButtonscjeck1
 
 
 
@@ -52,6 +54,7 @@ export class List extends Component {
           <RadioButtonComponent  radioBtnObj={radioButtonscjeck} />
          < TeaxtArea/>
          <TextField/>
+         <CheckBoxComponent checkboxObj={checkBoxButtons}  />
 
 
           </Content>

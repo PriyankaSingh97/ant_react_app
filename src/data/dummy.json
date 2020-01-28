@@ -32,5 +32,22 @@
             "label" : "Other"
 
         }
+    ],
+    "dropdown":[
+        {
+            "label":"hyderabad",
+            "value":"hyderabad"
+        },
+        {
+            "label":"mumbai",
+            "value":"mumbai"
+        },
+        {
+            "label":"goa",
+            "value":"goa"
+        }
+        
+        
+        
     ]
 }

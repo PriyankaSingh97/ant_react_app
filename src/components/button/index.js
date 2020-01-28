@@ -2,12 +2,13 @@ import React from "react";
 import { Button } from 'antd';
 // import 'react-toastify/dist/ReactToastify.css';
 import PropTypes from 'prop-types';
+import "./button.css"
 
-// THis component expects onClick function as a prop
+// This component expects onClick function as a prop
 const ButtonComponent = (props) => {
-  let {title="Button", className="", icon="", type="", disabled="", shape="",handleOnClick} = props;
+  let {title="", className="", icon="", type="", disabled="", shape="",handleOnClick,size=""} = props;
   
-  return (<Button title={title} className={className} disabled={disabled} icon={icon} iconPos={iconPos || "left"} tooltip={tooltip} tooltipOptions={tooltipOptions} onClick={handleOnClick } type={type} data-test="button-component"/>)
+  return (<Button  className={className} disabled={disabled} icon={icon} onClick={handleOnClick } type={type} data-test="button-component" size={size}>{title}</Button>)
 }
 ButtonComponent.propTypes = {
   title: PropTypes.string,

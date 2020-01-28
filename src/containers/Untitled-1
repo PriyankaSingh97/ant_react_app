@@ -1,0 +1,47 @@
+// const subMneu = [
+//     {
+//         title : Main-1
+//     },{
+//         title : Main-2,
+//         childern : [
+//             {
+//                 title : Main-2 -1,
+
+//             },
+//             {
+//                 title : Main-2 -2,
+//                 childern : [
+//                     {
+//                         title : Main-2 -2 -1,
+
+//                     },{
+//                         title : Main-2 -2 -2,
+
+//                     }
+//                 ]
+//             }
+//         ]
+//     }
+
+// ]
+
+// <Menu>
+// {subMneu.map((item)=>{
+//     renderOption(item)
+// })}
+// </Menu>
+
+// renderOption = (menuOption={}) =>{
+
+//     if(menuOption.childern){
+//         return <subMneu>
+//             {
+//                 menuOption.childern.map(_Item)=>{
+//                     renderOption(_Item);
+//                 }
+//             }
+//         </subMneu>
+//     }else{
+//         return <Menu.item> {menuOption.title}</Menu.item>
+//     }
+// }
